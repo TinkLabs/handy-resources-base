@@ -29,6 +29,19 @@ public class DeviceInfo implements Serializable {
 
     private Zone              zone;
 
+    public DeviceInfo() {
+        super();
+    }
+
+    public DeviceInfo(Device device, DeviceUser deviceUser, Hotel hotel, HotelConfig hotelConfig, Zone zone) {
+        super();
+        this.device = device;
+        this.deviceUser = deviceUser;
+        this.hotel = hotel;
+        this.hotelConfig = hotelConfig;
+        this.zone = zone;
+    }
+
     public Device getDevice() {
         return device;
     }
