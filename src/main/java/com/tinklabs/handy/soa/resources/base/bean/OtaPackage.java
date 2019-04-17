@@ -21,7 +21,7 @@ public class OtaPackage {
 
     private String  modified;
 
-    private Integer show_in_app_store;
+    private Boolean show_in_app_store;
 
     public Integer getId() {
         return id;
@@ -71,11 +71,11 @@ public class OtaPackage {
         this.modified = modified;
     }
 
-    public Integer getShow_in_app_store() {
+    public Boolean getShow_in_app_store() {
         return show_in_app_store;
     }
 
-    public void setShow_in_app_store(Integer show_in_app_store) {
+    public void setShow_in_app_store(Boolean show_in_app_store) {
         this.show_in_app_store = show_in_app_store;
     }
 
