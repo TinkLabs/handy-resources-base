@@ -15,7 +15,10 @@ public class OtaPackage {
 
     private String  package_name;
 
+    private String config;
+
     private Integer hotel_selectable;
+
 
     private String  created;
 
@@ -45,6 +48,14 @@ public class OtaPackage {
 
     public void setPackage_name(String package_name) {
         this.package_name = package_name;
+    }
+
+    public String getConfig() {
+        return config;
+    }
+
+    public void setConfig(String config) {
+        this.config = config;
     }
 
     public Integer getHotel_selectable() {
