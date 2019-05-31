@@ -35,6 +35,8 @@ public class Zone extends BaseVO {
 
     private String            config;
 
+    private String            timezone;
+
     private Integer           timezone_offset;
 
     private Integer           timezone_override;
@@ -287,4 +289,11 @@ public class Zone extends BaseVO {
         this.country_id = country_id;
     }
 
+    public String getTimezone() {
+        return timezone;
+    }
+
+    public void setTimezone(String timezone) {
+        this.timezone = timezone;
+    }
 }

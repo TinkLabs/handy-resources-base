@@ -1,5 +1,7 @@
 package com.tinklabs.handy.soa.resources.base.bean;
 
+import java.util.Date;
+
 public class Template extends BaseVO {
 
     /**
@@ -13,9 +15,9 @@ public class Template extends BaseVO {
     private String            name;
     private String            home_url;
     private String            config;
-    private String            created;
-    private String            modified;
-    private String            watch_config_id;
+    private Date            created;
+    private Date            modified;
+    private Integer            watch_config_id;
 
     public String getDeal_ids() {
         return deal_ids;
@@ -65,28 +67,29 @@ public class Template extends BaseVO {
         this.config = config;
     }
 
-    public String getCreated() {
+    public Date getCreated() {
         return created;
     }
 
-    public void setCreated(String created) {
+    public void setCreated(Date created) {
         this.created = created;
     }
 
-    public String getModified() {
+    public Date getModified() {
         return modified;
     }
 
-    public void setModified(String modified) {
+    public void setModified(Date modified) {
         this.modified = modified;
     }
 
-    public String getWatch_config_id() {
+    public Integer getWatch_config_id() {
         return watch_config_id;
     }
 
-    public void setWatch_config_id(String watch_config_id) {
+    public void setWatch_config_id(Integer watch_config_id) {
         this.watch_config_id = watch_config_id;
     }
+
 
 }
