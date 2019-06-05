@@ -18,6 +18,7 @@ public class Template extends BaseVO {
     private Date            created;
     private Date            modified;
     private Integer            watch_config_id;
+    private String            enable_advertisement;
 
     public String getDeal_ids() {
         return deal_ids;
@@ -91,5 +92,7 @@ public class Template extends BaseVO {
         this.watch_config_id = watch_config_id;
     }
 
+    public String getEnable_advertisement() { return enable_advertisement; }
 
+    public void setEnable_advertisement(String enable_advertisement) { this.enable_advertisement = enable_advertisement; }
 }
